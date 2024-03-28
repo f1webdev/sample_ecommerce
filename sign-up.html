@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up</title>
+    <link rel="stylesheet" href="./assets/css/sign-up.css">
+    <script src="./assets/js/signUp.js" defer></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body>
+    
+    <section class="container">
+       
+        <div class="sign-up-banner">
+            <h1>Sign up Now</h1>
+            <div>
+                Register and Discover Intriguing Products
+            </div>
+            <div class="buttons">
+                <button>SPECIAL OFFERS</button>
+                <button>JOIN OUR COMMUNITY</button>
+                <button>COSTUMER SUPPORT</button>
+            </div>
+            <div class="product">
+                <img src="./assets/images/sign-up-banner.jpg" alt="">
+            </div>
+        </div>
+
+        <form action="" class="form-container">
+            <div class="SignUploading">
+                <span class="loader"></span>
+            </div>
+            <div class="errorSignup">
+                <span class="material-symbols-outlined warning">
+                    warning
+                </span>
+                <span class="errMessage"></span>
+                <span id="closeErr" class="material-symbols-outlined close">
+                    close
+                </span>
+            </div>
+
+            <div class="header">
+                <h1>Welcome to Sign up</h1>
+                <p>Get Started Now</p>
+            </div>
+
+            <div class="inputs">
+                <label for="username">Username</label>
+                <input id="username" type="text" required>
+            </div>
+            <!-- <div class="inputs">
+                <label for="">Username</label>
+                <input type="text" required>
+            </div> -->
+            <div class="inputs">
+                <label  for="password">Password</label>
+                <div class="passwordI">
+                    <input id="password" type="password" required>
+                    <span class="material-symbols-outlined pass1Show">
+                        visibility
+                    </span>
+                    <span class="material-symbols-outlined pass1UnShow">
+                        visibility_off
+                    </span>
+                </div>
+            </div>
+            <div class="inputs">
+                <label for="confirmPass">Confirm Password</label>
+                <div class="passwordI">
+                    <span class="material-symbols-outlined pass2Show">
+                        visibility
+                    </span>
+                    <span class="material-symbols-outlined pass2UnShow">
+                        visibility_off
+                        </span>
+                    <input id="confirmPass" type="password" required>
+                </div>
+            </div>
+         
+            <div class="role">
+                <p>Choose Options</p>
+                <div class="radio-inp"> 
+                    <div>
+                        <input type="radio" id="costumer" value="costumer" name="role">
+                        <label for="costumer">Customer</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="role" id="seller" value="seller" required>
+                        <label for="seller">Seller</label>
+                    </div>
+                </div>
+            </div>
+            <div class="policy">
+                <input type="checkbox" name="" id="terms" required>
+                <label for="terms">I agree to terms and condition</label>
+            </div>
+            <button type="submit" class="signUpBtn">Sign up</button>
+            <div class="signup-with">
+                <p>or Sign up with </p>
+                <div class="buttons">
+                    <button type="button">
+                        <img src="./assets/images/google-icon.png" alt="">
+                    </button>
+                    <button type="button"><img src="./assets/images/fb-icon.png" alt=""></button>
+                    <button type="button"><img src="./assets/images/insta-icon.png" alt=""></button>
+                </div>
+            </div>
+            <div>
+                <p>Already have an account? <a href="./sign-in.html">Sign in</a> </p>
+            </div>
+
+        </form>
+
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&family=Titan+One&family=Work+Sans&display=swap');
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../images/login-bg.png");
+    padding: 50px 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    height: max-content;
+    display: flex;
+    border: 1px solid green;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.sign-up-banner {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+
+}
+.sign-up-banner .buttons button {
+    margin: 5px;
+    padding: 5px 30px;
+    font-size: 20px;
+    color: #246AF4;
+    border: none;
+    border-radius: 10px;
+    border: 1px solid #246AF4;
+    letter-spacing: 1.5px;
+}
+.sign-up-banner .product {
+}
+.sign-up-banner .product img {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 20px;
+}
+
+.form-container {
+    width: 100%;
+    padding: 20px;
+    position: relative;
+}
+.errorSignup {
+    position: absolute;
+    background-color: #DF2E38;
+    padding: 10px 5px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    display: none;
+}
+.errorSignup .warning,.close {
+    color: yellow;
+}
+.errorSignup .errMessage {
+    color: #fff;
+    letter-spacing: 1.5px;
+}
+.errorSignup .close {
+    cursor: pointer;
+}
+.form-container .header {
+    text-align: center;
+}
+.form-container .header h1 {
+    font-family: "Titan One",cursive;
+    letter-spacing: 2px;
+    color: #246AF4;
+}
+.form-container .header p {
+    font-family: "Open sans",sans-serif;
+    margin-top: 5px;
+}
+.form-container .inputs {
+    margin-top: 10px;
+}
+.form-container .inputs label {
+    letter-spacing: 1.5px;
+}
+.form-container .inputs input {
+    width: 100%;
+    height: 40px;
+    outline: none;
+    font-size: 17px;
+    letter-spacing: 1.5px;
+    padding-left: 10px;
+}
+.form-container .role {
+    margin-top: 10px;
+}
+.form-container .role .radio-inp{
+    display: flex;
+    column-gap: 20px;
+}
+.form-container .policy {
+    margin-top: 10px;
+}
+.form-container .signUpBtn {
+    letter-spacing: 1.5px;
+    background-color: #fff;
+    border: 2px solid #246AF4;
+    border-radius: 7px;
+    font-size: 17px;
+    color: #246AF4;
+    cursor: pointer;
+}
+.form-container .signUpBtn:hover {
+    background-color: #246AF4;
+    color: #fff;
+}
+.form-container .signUpBtn:active {
+    background-color: #fff;
+    border: 2px solid #246AF4;
+    color: #246AF4;
+}
+.form-container button {
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+}
+.form-container .signup-with {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.form-container .buttons {
+    display: flex;
+    gap: 10px;
+}
+.form-container .buttons button{
+    width: 48px;
+    cursor: pointer;
+    height: 48px;
+}
+.form-container .buttons button img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* passwordI */
+.form-container .passwordI {
+    border: 1px solid rgba(128, 128, 128, 0.073);
+    position: relative;
+}
+.form-container .passwordI span {
+    position: absolute;
+    right: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+    bottom: 0;
+    top: 0;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.form-container .passwordI .pass1UnShow{
+    display: none;
+}
+.form-container .passwordI .pass2UnShow{
+    display: none;
+}
+/* passwordI */
+
+/* .loader */
+.SignUploading {
+    background-color: #ffffff68;
+    position: absolute;
+    width: 100%;
+    max-width: 470px;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    flex-direction: column;
+}
+.SignUploading p {
+    letter-spacing: 1.5px;
+}
+.loader {
+    animation: rotate 1s infinite;
+    height: 50px;
+    width: 50px;
+  }
+
+  .loader:before,
+  .loader:after {
+    border-radius: 50%;
+    content: "";
+    display: block;
+    height: 20px;
+    width: 20px;
+  }
+  .loader:before {
+    animation: ball1 1s infinite;
+    background-color: #102C57;
+    box-shadow: 30px 0 0 #ff3d00;
+    margin-bottom: 10px;
+  }
+  .loader:after {
+    animation: ball2 1s infinite;
+    background-color: #F11A7B;
+    box-shadow: 30px 0 0 #fff;
+  }
+
+  @keyframes rotate {
+    0% { transform: rotate(0deg) scale(0.8) }
+    50% { transform: rotate(360deg) scale(1.2) }
+    100% { transform: rotate(720deg) scale(0.8) }
+  }
+
+  @keyframes ball1 {
+    0% {
+      box-shadow: 30px 0 0 #ff3d00;
+    }
+    50% {
+      box-shadow: 0 0 0 #ff3d00;
+      margin-bottom: 0;
+      transform: translate(15px, 15px);
+    }
+    100% {
+      box-shadow: 30px 0 0 #ff3d00;
+      margin-bottom: 10px;
+    }
+  }
+
+  @keyframes ball2 {
+    0% {
+      box-shadow: 30px 0 0 red;
+    }
+    50% {
+      box-shadow: 0 0 0 red;
+      margin-top: -20px;
+      transform: translate(15px, 15px);
+    }
+    100% {
+      box-shadow: 30px 0 0 red;
+      margin-top: 0;
+    }
+  }
+  
+
+  @media only screen and (max-width: 780px) {
+    .container {
+        flex-direction: column-reverse;
+    }
+ 
+  }
