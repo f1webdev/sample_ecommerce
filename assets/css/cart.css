@@ -38,7 +38,12 @@ body {
     padding: 5px 5px;
     margin: 0;
     padding: 10px;
-
+    text-decoration: none;
+    color: black;
+}
+.home_btn_link {
+    color: #128677;
+    display: none;
 }
 .navBrand span {
     text-align: center;
@@ -1058,6 +1063,10 @@ body {
     .navSection .navBrand {
         display: none;
     } 
+    .home_btn_link {
+        
+        display: block;
+    }
     .search form {
         margin-left: -30px;
 

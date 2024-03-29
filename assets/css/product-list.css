@@ -34,7 +34,11 @@ body {
     padding: 5px 5px;
     margin: 0;
     padding: 10px;
-
+    text-decoration: none;
+    color: black;
+}
+.home_btn_link {
+    display: none;
 }
 .navBrand span {
     text-align: center;
@@ -614,6 +618,10 @@ footer {
     .navSection .navBrand {
         display: none;
     } 
+    .home_btn_link {
+        color: #128677;
+        display: block;
+    }
     .product-list {
         gap: 5px;
     }

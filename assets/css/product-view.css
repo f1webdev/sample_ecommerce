@@ -36,7 +36,12 @@ body {
     padding: 5px 5px;
     margin: 0;
     padding: 10px;
-
+    text-decoration: none;
+    color: black;
+}
+.home_btn_link {
+    display: none;
+    color: #128677;
 }
 .navBrand span {
     text-align: center;
@@ -1200,9 +1205,12 @@ body {
         width: 100%;
         height: 330px;
     }
+   
     .product .image-container #carouselExample .carousel-item .img-wrapper{
         width: 100%;
-        height: 100%;
+        height: 310px;
+        display: flex;
+        align-items: center;
     }
 }
 @media only screen and (max-width: 900px) {
@@ -1230,7 +1238,10 @@ body {
 @media only screen and (max-width: 780px) {
     .navSection .navBrand {
         display: none;
-    } 
+    }
+     .home_btn_link {
+        display: block;
+    }
     
     .search form {
 
@@ -1284,6 +1295,7 @@ body {
         display: flex;
         align-items: center;
     }
+   
 }
 
 @media only screen and (max-width: 440px) {
