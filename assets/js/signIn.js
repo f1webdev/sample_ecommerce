@@ -58,7 +58,7 @@ signinBtn.addEventListener("click",(e)=> {
         isLogin = true
         localStorage.setItem("isLogin",true)
         signinBtn.textContent = "logging in ...."
-        location.replace("shop.html")
+        location.replace("index.html")
     }
   
 })
